@@ -30,15 +30,14 @@ h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 130%; 
-    color: #212353;
+    line-height: 130%;    
 }
 
 // feature start
 
 .features__wrapper {
     max-width: 1170px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     display: flex;
     flex-direction: column;
 
@@ -49,8 +48,9 @@ h2 {
         justify-content: center;
         margin-bottom: 80px;
 
-        h2 {
+        .title__features {
             margin-bottom: 50px;
+            color: #212353;
         }
 
         p {
@@ -171,9 +171,104 @@ h2 {
     }
 }
 
-
-
-
 // feature end
+
+
+// testimonials start
+
+.testimonials__wrapper {
+    max-width: 1170px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;    
+    background: #CCDDFF url(./img/bg-testimonial.png) no-repeat center;
+    border-radius: 50px;
+
+    .title__testimonials {
+        color: #4B5D68;
+        margin: 80px 0 85px;        
+    }
+
+    .review__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .review__card {
+            max-width: 465px;
+            height: 300px;
+            display: flex;
+            // align-items: ;            
+            background: #FFFFFF;
+            border: 1px solid #9C69E2;
+            box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+            border-radius: 50px;
+            margin: 0 100px 75px 0; 
+
+            &:last-child {
+                margin-right: 0;
+            }
+            
+            .review__card-wrapper {
+                margin: 50px 30px;
+                display: flex;
+            }
+            
+            .review__pic {
+                max-width: 90px;
+                height: auto;
+                margin-right: 15px;
+            }
+
+            h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 160%;              
+                display: flex;
+                align-items: center;
+                color: #212353;
+            }
+
+            a {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 160%;             
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.01em;
+                color: #9C69E2;
+                text-decoration: none;
+                margin-bottom: 18px;
+            }
+
+            a:hover {
+                opacity: 0.65;
+            }
+            
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #4B5D68; 
+            }
+            
+            
+
+        }
+        
+    }
+}
+
+
+// testimonials end
 
 
