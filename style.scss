@@ -90,7 +90,7 @@ h2 {
         }
 
         h3 {
-            font-family: 'Work Sans';
+            font-family: 'Work Sans', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
@@ -101,7 +101,7 @@ h2 {
 
         p {
             max-width: 230px;
-            font-family: 'Montserrat';
+            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -110,15 +110,40 @@ h2 {
             margin-bottom: 20px;
         }
 
-        .card__item-data {
+        .card__item-text {
             width: 400px;
             height: 400px;            
             border-radius: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;          
-            background: #F0FAF9 url(./img/bg-data.png) no-repeat top right;
+            
             padding: 62px 70px 62px 100px;
+        }
+
+        .bg__data {
+            background: #F0FAF9 url(./img/bg-data.png) no-repeat top right;
+        }
+
+        .card__more {
+            display: inline-block;            
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;        
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.005em;            
+            color: #212353;            
+            text-decoration: none;
+            background: url(./img/arrow.png) no-repeat 60% center;
+            transition: .2s all;
+        }
+
+        .card__more:hover, .card__more:active, .card:focus {
+            // opacity: .85;
+            background: url(./img/arrow.png) no-repeat 65% center;
         }
 
     }
