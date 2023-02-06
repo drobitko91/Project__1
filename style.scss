@@ -1,0 +1,68 @@
+// fonts start
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Work+Sans:wght@400;500&display=swap');
+
+// fonts ahd
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img { 
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%; 
+    color: #212353;
+}
+
+// feature start
+
+.features__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        p {
+            max-width: 638px;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;            
+            color: #4B5D68;
+        }
+    }
+}
+
+
+
+
+// feature end
+
+
