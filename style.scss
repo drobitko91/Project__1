@@ -76,12 +76,20 @@ h2 {
             justify-content: center;
             align-items: center;
             margin-bottom: 50px;
+
+            @media only screen and (max-width : 1024px) {
+              width: 100%;
+            }
         }
 
         .card__item-pic {
             margin-right: -60px;
             z-index: 1;
             height: 180px;
+
+            @media only screen and (max-width : 768px) {
+                display: none;
+              }
             
             img {
                 width: auto;
@@ -124,6 +132,20 @@ h2 {
         .bg__data {
             background: #F0FAF9 url(./img/bg-data.png) no-repeat top right;
         }
+
+        .bg__access {
+            background: #F6F0FD url(./img/bg-access.png) no-repeat bottom right;
+        }
+
+        .bg__print {
+            background: #FEF0F8 url(./img/bg-print.png) no-repeat top right;
+        }
+
+        .bg__code {
+            background: #EAF6FC url(./img/bg-code.png) no-repeat center;
+        }
+
+
 
         .card__more {
             display: inline-block;            

@@ -90,10 +90,20 @@ h2 {
           align-items: center;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 1024px) {
+  .features__wrapper .features__cards .card__item {
+    width: 100%;
+  }
+}
 .features__wrapper .features__cards .card__item-pic {
   margin-right: -60px;
   z-index: 1;
   height: 180px;
+}
+@media only screen and (max-width: 768px) {
+  .features__wrapper .features__cards .card__item-pic {
+    display: none;
+  }
 }
 .features__wrapper .features__cards .card__item-pic img {
   width: auto;
@@ -136,6 +146,15 @@ h2 {
 }
 .features__wrapper .features__cards .bg__data {
   background: #F0FAF9 url(./img/bg-data.png) no-repeat top right;
+}
+.features__wrapper .features__cards .bg__access {
+  background: #F6F0FD url(./img/bg-access.png) no-repeat bottom right;
+}
+.features__wrapper .features__cards .bg__print {
+  background: #FEF0F8 url(./img/bg-print.png) no-repeat top right;
+}
+.features__wrapper .features__cards .bg__code {
+  background: #EAF6FC url(./img/bg-code.png) no-repeat center;
 }
 .features__wrapper .features__cards .card__more {
   display: inline-block;
