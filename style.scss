@@ -283,7 +283,32 @@ h2 {
     }
 }
 
-
 // testimonials end
+
+
+// footer start
+
+.footer__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    // display: flex;
+
+    .footer__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .footer__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+}
+
+
+// footer end
 
 
