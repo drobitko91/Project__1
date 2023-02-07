@@ -293,6 +293,19 @@ h2 {
     margin: 0 auto;
     // display: flex;
 
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 160%;            
+        color: #212353;
+    }
+
+    .navigation__title {
+        margin-bottom: 30px;
+    }
+
     .footer__title {
         display: flex;
         justify-content: space-between;
@@ -302,8 +315,7 @@ h2 {
 
     .footer__navigation {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-between;        
         margin-bottom: 100px;
     }
 
@@ -314,16 +326,7 @@ h2 {
         
         img {
             margin-right: 20px;
-        }
-
-        h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 160%;            
-            color: #212353;
-        }
+        }        
     }
 
     .footer__address {
@@ -346,6 +349,100 @@ h2 {
     .footer__address:last-child {
         margin-bottom: 0;
     }
+
+    .footer__navigation-links {
+        display: flex;
+        justify-content: space-between;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+
+    .footer__about, .footer__help {
+        display: flex;
+        flex-direction: column; 
+        margin-right: 168px;      
+    }
+
+    .footer__about:last-child, .footer__help {
+        margin-bottom: 0;
+    }
+
+    .footer__link {
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;        
+        color: #4B5D68;
+    }
+
+    .footer__link:active, .footer__link:focus, .footer__link:hover {
+        color: #8A40EE;
+    }
+
+    .media__link {
+        text-decoration: none;
+    }
+
+    svg {
+       margin-right: 15px;
+       
+    }
+
+    .facebook__icon:hover {
+        overflow: inherit;
+       
+       circle {
+        stroke: #3B5998;
+        fill: none;        
+        opacity: 1;
+        transition: all .3s linear;
+       } 
+
+       path {
+        fill: #3B5998;
+        transition: all .3s linear;
+       }
+    }
+
+    .insta__icon:hover{
+        overflow: inherit;
+       
+       circle {
+        stroke: #C13584;
+        fill: none;        
+        opacity: 1;
+        transition: all .3s linear;
+       } 
+
+       path {
+        fill: #C13584;
+        transition: all .3s linear;
+       }
+    }
+
+    .twitter__icon:hover{
+        overflow: inherit;
+       
+       circle {
+        stroke: #00ACEE;
+        fill: none;        
+        opacity: 1;
+        transition: all .3s linear;
+       } 
+
+       path {
+        fill: #00ACEE;
+        transition: all .3s linear;
+       }
+    }
+
 }
 
 

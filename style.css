@@ -319,6 +319,17 @@ h2 {
   max-width: 1170px;
   margin: 0 auto;
 }
+.footer__wrapper h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: #212353;
+}
+.footer__wrapper .navigation__title {
+  margin-bottom: 30px;
+}
 .footer__wrapper .footer__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,9 +349,6 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 100px;
 }
 .footer__wrapper .footer__logo {
@@ -354,14 +362,6 @@ h2 {
 }
 .footer__wrapper .footer__logo img {
   margin-right: 20px;
-}
-.footer__wrapper .footer__logo h3 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 160%;
-  color: #212353;
 }
 .footer__wrapper .footer__address {
   display: -webkit-box;
@@ -384,4 +384,92 @@ h2 {
 }
 .footer__wrapper .footer__address:last-child {
   margin-bottom: 0;
+}
+.footer__wrapper .footer__navigation-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__wrapper .footer__navigation-links:last-child {
+  margin-bottom: 0;
+}
+.footer__wrapper .footer__about, .footer__wrapper .footer__help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 168px;
+}
+.footer__wrapper .footer__about:last-child, .footer__wrapper .footer__help {
+  margin-bottom: 0;
+}
+.footer__wrapper .footer__link {
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+}
+.footer__wrapper .footer__link:active, .footer__wrapper .footer__link:focus, .footer__wrapper .footer__link:hover {
+  color: #8A40EE;
+}
+.footer__wrapper .media__link {
+  text-decoration: none;
+}
+.footer__wrapper svg {
+  margin-right: 15px;
+}
+.footer__wrapper .facebook__icon:hover {
+  overflow: inherit;
+}
+.footer__wrapper .facebook__icon:hover circle {
+  stroke: #3B5998;
+  fill: none;
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.footer__wrapper .facebook__icon:hover path {
+  fill: #3B5998;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.footer__wrapper .insta__icon:hover {
+  overflow: inherit;
+}
+.footer__wrapper .insta__icon:hover circle {
+  stroke: #C13584;
+  fill: none;
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.footer__wrapper .insta__icon:hover path {
+  fill: #C13584;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.footer__wrapper .twitter__icon:hover {
+  overflow: inherit;
+}
+.footer__wrapper .twitter__icon:hover circle {
+  stroke: #00ACEE;
+  fill: none;
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.footer__wrapper .twitter__icon:hover path {
+  fill: #00ACEE;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
