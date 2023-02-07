@@ -300,11 +300,51 @@ h2 {
         margin-bottom: 100px;
     }
 
-    .footer__info {
+    .footer__navigation {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 100px;
+    }
+
+    .footer__logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        
+        img {
+            margin-right: 20px;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 160%;            
+            color: #212353;
+        }
+    }
+
+    .footer__address {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;            
+            letter-spacing: 0.01em;
+            color: #212353;
+
+        }    
+    }
+
+    .footer__address:last-child {
+        margin-bottom: 0;
     }
 }
 
