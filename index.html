@@ -17,15 +17,22 @@
                 <div class="header_wrapper--logo_navigation">
                     <img src="img/svg/favicon_logo.svg" alt="logo" class="header_wrapper--logo">
                     <nav class="header_wrapper--navigation">
-                        <ul><a href="#">About</a></ul>
-                        <ul><a href="#">Help</a></ul>
-                        <ul><a href="#features">Features</a></ul>
-                        <ul><a href="#">Sign Up</a></ul>
+                        <ul class="header_wrapper--navigation_items">
+                            <li><a class="header_wrapper--link" href="#!">About</a></li>
+                            <li><a class="header_wrapper--link" href="#!">Help</a></li>
+                            <li><a class="header_wrapper--link" href="#features">Features</a></li>
+                            <li><a class="header_wrapper--link" href="#!">Sign Up</a></li>
+
+                            <button class="header_wrapper--close_navbar">X</button>
+                        </ul>
                     </nav>
                 </div>
 
                 <button class="bnt__request">
                     Request Demo
+                </button>
+                <button class="header_wrapper--burger">
+                    <span class="header_wrapper--burger_center"></span>
                 </button>
             </div>
         </div>
@@ -370,5 +377,7 @@
         <!-- /wrapper -->
     </footer>
     <!-- /footer -->
+
+    <script src="script.js"></script>
 </body>
 </html>
