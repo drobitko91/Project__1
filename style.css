@@ -128,10 +128,6 @@ h2 {
   }
 }
 
-.header_wrapper--link {
-  display: block;
-}
-
 .bnt__request {
   width: 210px;
   height: 60px;
@@ -156,11 +152,6 @@ h2 {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   cursor: url("img/svg/cursor.svg"), pointer;
-}
-@media only screen and (max-width: 767px) {
-  .bnt__request {
-    display: none;
-  }
 }
 
 .header_wrapper--burger {
@@ -409,7 +400,8 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.features__wrapper .title {
+
+.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,11 +417,13 @@ h2 {
           justify-content: center;
   margin-bottom: 80px;
 }
-.features__wrapper .title .title__features {
+
+.title__features {
   margin-bottom: 50px;
   color: #212353;
 }
-.features__wrapper .title p {
+
+p {
   max-width: 638px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -439,14 +433,15 @@ h2 {
   color: #4B5D68;
   text-align: center;
 }
-.features__wrapper .features__cards {
+
+.features__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.features__wrapper .features__cards .card__item {
+.features__cards .card__item {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,25 +455,25 @@ h2 {
   margin-bottom: 50px;
 }
 @media only screen and (max-width: 1024px) {
-  .features__wrapper .features__cards .card__item {
+  .features__cards .card__item {
     width: 100%;
   }
 }
-.features__wrapper .features__cards .card__item-pic {
+.features__cards .card__item-pic {
   margin-right: -60px;
   z-index: 1;
   height: 180px;
 }
 @media only screen and (max-width: 768px) {
-  .features__wrapper .features__cards .card__item-pic {
+  .features__cards .card__item-pic {
     display: none;
   }
 }
-.features__wrapper .features__cards .card__item-pic img {
+.features__cards .card__item-pic img {
   width: auto;
   max-width: initial;
 }
-.features__wrapper .features__cards h3 {
+.features__cards h3 {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -487,7 +482,7 @@ h2 {
   color: #212353;
   margin-bottom: 20px;
 }
-.features__wrapper .features__cards p {
+.features__cards p {
   max-width: 230px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -497,7 +492,7 @@ h2 {
   color: #4B5D68;
   margin-bottom: 20px;
 }
-.features__wrapper .features__cards .card__item-text {
+.features__cards .card__item-text {
   width: 400px;
   height: 400px;
   border-radius: 50px;
@@ -513,19 +508,19 @@ h2 {
           justify-content: center;
   padding: 62px 70px 62px 100px;
 }
-.features__wrapper .features__cards .bg__data {
+.features__cards .bg__data {
   background: #F0FAF9 url(./img/bg-data.png) no-repeat top right;
 }
-.features__wrapper .features__cards .bg__access {
+.features__cards .bg__access {
   background: #F6F0FD url(./img/bg-access.png) no-repeat bottom right;
 }
-.features__wrapper .features__cards .bg__print {
+.features__cards .bg__print {
   background: #FEF0F8 url(./img/bg-print.png) no-repeat top right;
 }
-.features__wrapper .features__cards .bg__code {
+.features__cards .bg__code {
   background: #EAF6FC url(./img/bg-code.png) no-repeat center;
 }
-.features__wrapper .features__cards .card__more {
+.features__cards .card__more {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -545,7 +540,12 @@ h2 {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
-.features__wrapper .features__cards .card__more:hover, .features__wrapper .features__cards .card__more:active, .features__wrapper .features__cards .card:focus {
+@media only screen and (max-width: 768px) {
+  .features__cards .card__more {
+    background: url(./img/arrow.png) no-repeat 80% center;
+  }
+}
+.features__cards .card__more:hover, .features__cards .card__more:active, .features__cards .card:focus {
   background: url(./img/arrow.png) no-repeat 65% center;
   cursor: url("./img/svg/cursor.svg"), auto;
 }
